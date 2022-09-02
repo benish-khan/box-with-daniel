@@ -15,7 +15,7 @@ export default function Home() {
 
         <img className="w-72" src="/bwd.svg" />
         <div className="flex flex-col items-center mt-10">
-          <code className="p-2">
+          <code className="p-2 bg-green-400">
             <b>Phone number: 415-309-5378</b>
           </code>
           <code className="p-2">
