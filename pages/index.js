@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+import ContactCard from "@components/ContactCard";
 
 export default function Home() {
   return (
@@ -14,22 +15,14 @@ export default function Home() {
         <div className="w-full h-1"></div>
 
         <img className="w-72" src="/bwd.svg" />
-        <div className="flex flex-col items-center mt-10">
-          <code className="p-2 bg-green-400">
-            <b>Phone number: 415-309-5378</b>
-          </code>
-          <code className="p-2">
-            <b>
-              mail:
-              <a
-                className="cursor-pointer hover:text-blue-700 underline"
-                href="mailto:info@boxwithdaniel.com"
-              >
-                info@boxwithdaniel.com
-              </a>
-            </b>
-          </code>
-          <code className="p-2">
+        <div className="flex flex-col  items-center mt-10">
+          <ContactCard text="Phone number: 415-309-5378" />
+          <ContactCard
+            text="mail: info@boxwithdaniel.com"
+            href="mailto:info@boxwithdaniel.com"
+          />
+
+          <code className="p-2 m-2">
             Website:
             <a
               className="cursor-pointer hover:text-blue-700 underline"
