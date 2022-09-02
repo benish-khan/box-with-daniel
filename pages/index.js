@@ -5,7 +5,10 @@ import ContactCard from "@components/ContactCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-between h-screen w-full">
+    <div
+      style={{ backgroundColor: "orange" }}
+      className="flex flex-col justify-between h-screen w-full"
+    >
       <Head>
         <title>Box with Daniel</title>
         <link rel="icon" href="/favicon.ico" />
