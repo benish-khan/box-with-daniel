@@ -18,7 +18,7 @@ export default function Home() {
       <div></div>
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full h-1"></div>
-        <Image src={Logo} alt="Company Logo" width={500} height={500} />
+        <Image src={Logo} alt="Company Logo" width={300} height={300} />
         <div className="flex flex-col  items-center mt-10">
           <ContactCard text="Phone number: 415-309-5378" />
           <ContactCard
