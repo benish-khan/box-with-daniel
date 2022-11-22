@@ -6,7 +6,7 @@ import ContactCard from "@components/ContactCard";
 export default function Home() {
   return (
     <div
-      style={{ backgroundColor: "orange" }}
+      style={{ backgroundColor: "gray" }}
       className="flex flex-col justify-between h-screen w-full"
     >
       <Head>
@@ -16,8 +16,7 @@ export default function Home() {
       <div></div>
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full h-1"></div>
-
-        <img className="w-72" src="/bwd.svg" />
+        <img src="../public/icons/Vectorbwd.svg" />
         <div className="flex flex-col  items-center mt-10">
           <ContactCard text="Phone number: 415-309-5378" />
           <ContactCard
