@@ -2,11 +2,13 @@ import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import ContactCard from "@components/ContactCard";
+import Image from "next/image";
+import Logo from "../public/icons/Vectorbwd.svg";
 
 export default function Home() {
   return (
     <div
-      style={{ backgroundColor: "gray" }}
+      style={{ backgroundColor: "orange" }}
       className="flex flex-col justify-between h-screen w-full"
     >
       <Head>
@@ -16,7 +18,8 @@ export default function Home() {
       <div></div>
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full h-1"></div>
-        <img src="../public/icons/Vectorbwd.svg" />
+        <Image src={Logo} alt="Company Logo" width={500} height={500} />
+        {/* <img className="w-72" src="/bwd.svg" /> */}
         <div className="flex flex-col  items-center mt-10">
           <ContactCard text="Phone number: 415-309-5378" />
           <ContactCard
