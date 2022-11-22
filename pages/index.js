@@ -8,7 +8,7 @@ import Logo from "../public/icons/Vectorbwd.svg";
 export default function Home() {
   return (
     <div
-      style={{ backgroundColor: "orange" }}
+      style={{ backgroundColor: "gray" }}
       className="flex flex-col justify-between h-screen w-full"
     >
       <Head>
