@@ -17,24 +17,7 @@ export default function Home() {
         <div className="w-full h-1"></div>
 
         <img className="w-72" src="/bwd_logo.svg" />
-        <div className="flex flex-col  items-center mt-10">
-          {/* <ContactCard text="Phone number: 415-309-5378" />
-          <ContactCard
-            text="mail: info@boxwithdaniel.com"
-            href="mailto:info@boxwithdaniel.com"
-          /> */}
 
-          {/* <code className="p-2 m-2">
-            Website:
-            <a
-              className="cursor-pointer hover:text-blue-700 underline"
-              target="blank"
-              href="www.boxwithdaniel.com"
-            >
-              www.boxwithdaniel.com
-            </a>
-          </code> */}
-        </div>
         <div className="flex mt-10">
           <div className="p-2">
             <a href="https://www.yelp.com/biz/box-with-daniel-san-francisco">
