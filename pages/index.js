@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Header from "@components/Header";
-import Footer from "@components/Footer";
 import ContactCard from "@components/ContactCard";
 
 export default function Home() {
   return (
     <div
-      style={{ backgroundColor: "orange" }}
+      style={{ backgroundColor: "gray" }}
       className="flex flex-col justify-between h-screen w-full"
     >
       <Head>
@@ -17,15 +16,15 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full h-1"></div>
 
-        <img className="w-72" src="/bwd.svg" />
+        <img className="w-72" src="/bwd_logo.svg" />
         <div className="flex flex-col  items-center mt-10">
-          <ContactCard text="Phone number: 415-309-5378" />
+          {/* <ContactCard text="Phone number: 415-309-5378" />
           <ContactCard
             text="mail: info@boxwithdaniel.com"
             href="mailto:info@boxwithdaniel.com"
-          />
+          /> */}
 
-          <code className="p-2 m-2">
+          {/* <code className="p-2 m-2">
             Website:
             <a
               className="cursor-pointer hover:text-blue-700 underline"
@@ -34,7 +33,7 @@ export default function Home() {
             >
               www.boxwithdaniel.com
             </a>
-          </code>
+          </code> */}
         </div>
         <div className="flex mt-10">
           <div className="p-2">
@@ -69,10 +68,24 @@ export default function Home() {
               />
             </a>
           </div>
+          <div className="p-2">
+            <a href="mailto: info@boxwithdaniel.com">
+              <img
+                className="hover:scale-110 duration-200 ease-in-out transition-all w-8"
+                src="/icons/mail.svg"
+              />
+            </a>
+          </div>
+          <div className="p-2">
+            <a href="tel:+14153095378">
+              <img
+                className="hover:scale-110 duration-200 ease-in-out transition-all w-8"
+                src="/icons/old-typical-phone.svg"
+              />
+            </a>
+          </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
